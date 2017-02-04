@@ -1,29 +1,16 @@
 <head>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>weightwatch-material</title>
+  <title>Weightwatch</title>
 </head>
 
 <body>
-
   {{> nav}}
-
-
-  {{> atForm}}
-
-  {{> weightInformation}}
-
-  {{> buttons}}
-
-</body>
-
-<template name="buttons">
+  <!-- {{> atForm}} -->
   <div class="row">
-    <div class="col s12 m6">
-      <a class="waves-effect waves-light btn"><i class="material-icons">refresh</i></a>
-    </div>
+    {{> weightwidget}}
   </div>
-</template>
-
+  {{> buttons}}
+</body>
 
 <template name="nav">
   <nav class="red lighten-2">
@@ -33,56 +20,11 @@
   </nav>
 </template>
 
-<template name="weightInformation">
+<template name="buttons">
   <div class="row">
     <div class="col s12 m6">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Current weight with visualizations</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6">
-      <div class="card blue-grey darken-2">
-        <div class="card-content white-text">
-          <span class="card-title">Weight history with graphs</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
+      <a class="waves-effect waves-light btn"><i class="material-icons">refresh</i></a>
     </div>
   </div>
-    <div class="row">
-      <div class="col s12 m6">
-        <div class="card blue-grey darken-3">
-          <div class="card-content white-text">
-            <span class="card-title">Further graphs</span>
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m6">
-        <div class="card blue-grey darken-1">
-          <div class="card-content white-text">
-            <span class="card-title">Further graphs 2</span>
-          </div>
-          <canvas id="myChart" width="400" height="400"></canvas>
-        </div>
-      </div>
-    </div>
 </template>
+

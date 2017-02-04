@@ -25,4 +25,3 @@ npm-bcrypt@0.8.7
 accounts-password
 fourseven:scss
 materialize:materialize@=0.97.7
-chart:chart
