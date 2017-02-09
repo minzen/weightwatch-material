@@ -1,16 +1,18 @@
-<head>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>Weightwatch</title>
-</head>
+<template name="main">
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Weightwatch</title>
+  </head>
 
-<body>
-  {{> nav}}
-  <!-- {{> atForm}} -->
-  <div class="row">
-    {{> weightwidget}}
-  </div>
-  {{> buttons}}
-</body>
+  <body>
+    {{> nav}}
+    <!-- {{> atForm}} -->
+    <div class="row">
+      {{> weightwidget}}
+    </div>
+    {{> buttons}}
+  </body>
+</template>
 
 <template name="nav">
   <nav class="red lighten-2">
@@ -27,4 +29,3 @@
     </div>
   </div>
 </template>
-
